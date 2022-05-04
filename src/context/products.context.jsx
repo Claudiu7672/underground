@@ -5,6 +5,7 @@ import PRODUCTS from "../shop-data.json";
 export const ProductsContext = createContext({
   products: [],
 });
+console.log(ProductsContext);
 
 export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState(PRODUCTS);
